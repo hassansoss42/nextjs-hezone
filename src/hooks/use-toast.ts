@@ -1,4 +1,3 @@
-/*************  ✨ Windsurf Command ⭐  *************/
 import { JSX, useState } from 'react'
 
 type Toast = {
@@ -20,5 +19,3 @@ export function useToast() {
 
   return { toasts, addToast, removeToast }
 }
-
-/*******  f628e8da-8071-405a-a59b-01f5a28e3a3a  *******/
