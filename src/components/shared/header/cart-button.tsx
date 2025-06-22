@@ -11,12 +11,13 @@ export default function CartButton() {
   const {
     cart: { items },
   } = useCartStore()
+  const isCartSidebarOpen = useCartSidebar()
+
   const cartItemsCount = items.reduce((a, c) => a + c.quantity, 0)
   return (
     <Link href='/cart' className='px-1 header-button'>
       <div className='flex items-end text-xs relative'>
         <ShoppingCartIcon className='h-8 w-8' />
-
         {isMounted && (
           <span
             className={cn(
