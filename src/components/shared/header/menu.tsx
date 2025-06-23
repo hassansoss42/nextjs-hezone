@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import CartButton from './cart-button'
+import UserButton from './user-button'
 
 export default function Menu() {
   return (
@@ -8,6 +9,7 @@ export default function Menu() {
         <Link href='/sign-in' className='flex items-center header-button'>
           Hello, Sign in
         </Link>
+        <UserButton />
 
         <CartButton />
       </nav>
